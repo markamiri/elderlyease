@@ -1,0 +1,149 @@
+.footer {
+  background-color: #1e1d31;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 380px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #1e1d31;
+  border-radius: 50%;
+  border: 1px solid #4d8ff2;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #4d8ff2;
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 140px;
+}
+
+.linkGroupTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkItem {
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: white;
+  text-decoration: none;
+  padding: 0 5px 11px 0;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .linksContainer {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .topSection {
+    flex-direction: column;
+  }
+
+  .linksContainer {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .linkGroup {
+    min-width: calc(50% - 20px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linkGroup {
+    min-width: 100%;
+  }
+}

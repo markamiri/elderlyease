@@ -1,0 +1,189 @@
+.hero {
+  position: relative;
+  min-height: 700px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 100px auto 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 80px 40px 40px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 20px; /* Curved edges on all corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heroBg {
+  z-index: -1;
+  border-radius: 20px; /* Match the curved edges */
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.ctaContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.cardsContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px 15px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2; /* Ensure cards are above the connector lines */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardIcon {
+  background: rgba(255, 255, 255, 0.25);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardIcon {
+  transform: scale(1.05);
+}
+
+.cardIconInner {
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardText {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.connectorLine {
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 2;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .cardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero {
+    width: 95%;
+    border-radius: 15px;
+  }
+
+  .heroBg {
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 95%;
+    padding: 60px 20px 40px;
+    min-height: 600px;
+    border-radius: 15px;
+    margin: 80px auto 30px;
+  }
+
+  .heroBg {
+    border-radius: 15px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+
+  .ctaContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  .hero {
+    width: 92%;
+    border-radius: 12px;
+    margin: 70px auto 20px;
+  }
+
+  .heroBg {
+    border-radius: 12px;
+  }
+}

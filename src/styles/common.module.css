@@ -1,0 +1,200 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.sectionPadding {
+  padding: 60px 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.primaryButton:hover {
+  opacity: 0.9;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.secondaryButton:hover {
+  background-color: rgba(30, 29, 49, 0.05);
+}
+
+.actionButton {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 18px;
+  padding: 12px 25px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.heading1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.heading2 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.heading3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.heading4 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-gray);
+}
+
+.largeParagraph {
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--light-gray);
+}
+
+.subtle {
+  color: var(--light-gray);
+}
+
+.cardShadow {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+}
+
+.lightBlueBg {
+  background-color: var(--light-blue-bg);
+}
+
+.roundedCorners {
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: linear-gradient(to right, #e0f7ff, #ecf2ff);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .heading1 {
+    font-size: 48px;
+  }
+
+  .heading2 {
+    font-size: 42px;
+  }
+
+  .heading3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .heading1 {
+    font-size: 40px;
+  }
+
+  .heading2 {
+    font-size: 36px;
+  }
+
+  .heading3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .heading1 {
+    font-size: 32px;
+  }
+
+  .heading2 {
+    font-size: 28px;
+  }
+
+  .heading3 {
+    font-size: 24px;
+  }
+}
